@@ -1,0 +1,47 @@
+@import  '../globals/variables';
+
+.music-player {
+  justify-content: space-between;
+  align-items: center;
+  background: $silver;
+  height: 50px;
+  margin-bottom: 10px;
+
+  div {
+    align-items: center;
+  }
+
+  span {
+    margin: 0 5px;
+  }
+
+  .process-bar {
+    flex-grow: 1;
+  }
+
+  .circle {
+    @include flexbox();
+    @include border-radius(30px);
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background: $red;
+
+    .fa {
+       color: $white;
+    }
+
+    .fa-play {
+      margin-left: 3px;
+    }
+
+    .fa-backward {
+       margin-left: -5px;
+    }
+
+    .fa-forward {
+      margin-left: 5px;
+    }
+  }
+}

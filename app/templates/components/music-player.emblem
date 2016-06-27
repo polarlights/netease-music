@@ -1,0 +1,26 @@
+.music-player.full-width.bottom
+  .play-handle.one-fifth-4x
+    span.circle
+      = fa-icon 'backward'
+    span.circle
+      = fa-icon 'play'
+    span.hide.circle
+      = fa-icon 'pause'
+    span.circle
+      = fa-icon 'forward'
+    span.process-bar
+      =input type='range' class='process-line full-width' value=0
+    span
+      label#played-time 02:01
+      label &#47;
+      label#duration 03:24
+  .play-controls.one-fifth-1x
+    span
+      = fa-icon 'volume-up'
+    span
+      =input type='range' class='volumn' value=0
+    .play-list
+      span
+        = fa-icon 'random'
+      span
+        = fa-icon 'list'
